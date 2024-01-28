@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.main video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bubblegame {
+  width: 80%;
+  height: 90%;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #fff;
+  position: absolute;
+  z-index: 9;
+}
+
+.top_panel {
+  width: 100%;
+  height: calc(100% - 90%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(96, 155, 218);
+  color: white;
+}
+
+.panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  gap: 10px;
+}
+
+.panel h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.panel .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: rgb(96, 155, 218);
+  padding: 2px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.game_panel {
+  width: 100%;
+  height: calc(100% - 10%);
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 15px;
+  overflow: hidden;
+}
+
+.bubble {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(96, 155, 218);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgb(15, 76, 142);
+}
+
+.bubble:hover {
+  background-color: rgb(96, 155, 218);
+  color: #fff;
+  transition: ease-in-out;
+  cursor: pointer;
+}
