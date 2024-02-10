@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: #131313;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.digitalClock {
+  /* width: 40%;
+  height: 50%; */
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 30px 20px;
+  border-radius: 10px;
+  background-color: #3551ff;
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.digitalClock::before {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  z-index: -1;
+  filter: blur(10px);
+  border-radius: 10px;
+  background-color: #3551ff;
+  content: "";
+}
+
+.clockDate {
+  font-size: 1.7rem;
+}
+
+.clockTime {
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 475px) {
+  .digitalClock {
+    padding: 20px 20px 10px;
+  }
+  .clockDate {
+    font-size: 0.5375rem;
+  }
+  .clockTime {
+    font-size: 2.75rem;
+  }
+}
